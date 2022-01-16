@@ -48,9 +48,7 @@ main{
 .header{
     display: flex;
 }
-.head-img img{
-    
-}
+
 /* horijontal border */
 hr{
     width: 85%;
@@ -143,11 +141,16 @@ hr{
 .footer-ditails p i{
     padding-left: 20px;
 }
+/* media query */
 
 @media only screen and (max-width:688px) {
     .container{
         width: 100%;
     }   
+    .logo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
     .header, .optional{
         flex-direction: column;
     }
