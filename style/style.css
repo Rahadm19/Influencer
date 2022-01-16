@@ -154,6 +154,9 @@ hr{
     .container{
         width: 100%;
     }  
+    .naveheading h2{
+     padding: 50px 0 0 30px;
+}
     .head-img img{
       width: 99%;
       }
