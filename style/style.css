@@ -160,6 +160,9 @@ hr{
     .optional-img img{
       width: 99%;
       }
+    .logo img{
+   margin-left:0px;
+}
     .logo{
         display: grid;
         grid-template-columns: repeat(2,1fr);
