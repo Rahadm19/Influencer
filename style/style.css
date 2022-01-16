@@ -83,6 +83,7 @@ hr{
 
 .rating{
     font-size: 12px;
+    color: #FB8200;
 }
 
 .Collection{
@@ -90,6 +91,12 @@ hr{
 }
 .collection-info{
     line-height: 20px;
+}
+.collection-author{
+    font-weight: 500;
+}
+.collection-title{
+    font-size: 20px;
 }
 
 /* see more button is the important but i can understand how how to apply this method*/
