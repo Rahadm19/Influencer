@@ -38,7 +38,11 @@ main{
   
 
 }
-.about-head button h2{
+.about-head h2{
+    font-weight: 5000;
+    font-size: 50px;
+}
+.about-head button h3{
     color: #FFFFFF;
 }
 .header{
@@ -53,20 +57,30 @@ hr{
     height: 1px solid #DFE5EC;
 }
 /* logo cssK */
-.logo{ 
-    display: flex;
+.logo { 
+
+    display: inline-flex
     justify-content: center;
 }
 .logo img{
    margin-left: 100px;
 }
 /* popular collection */
-.popular-collection h1 {
-    text-align: center;
+
+.popular-collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.Collection{
+    border: 1px solid #EEEEEE;
+    padding: 20px;
+    margin-top: 20px;
+   
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.3);
 }
 .collection-banner img{
-    width: 266px;
-    height: 141px;
+    width: 300px;
+    height: 256px;
 }
 
 .rating{
@@ -78,4 +92,77 @@ hr{
 }
 .collection-info{
     line-height: 20px;
+}
+
+/* see more button is the important but i can understand how how to apply this method*/
+
+.see-more{
+        display: inline-block;
+        color: #FFFFFF;
+        font-weight: 700;
+        padding: 10px 30px;
+        cursor: pointer;
+}
+#btn{
+    float: right;
+
+}
+
+/* optional */
+.optional{
+    display: flex;
+}
+.optional-about{
+    margin-left: 100px;
+}
+.optional-about button{
+    background-color: #E02C6D;
+    height: 50px;
+}
+.optional-about button a{
+    color: #FFFFFF;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+}
+/* footer */
+
+.footer{
+    height: 200px;
+    width: 99%;
+    background-color: #0A0826;
+    position: absolute;
+}
+.footer-ditails{
+    color: #FFFFFF;
+    margin-top: 70px;
+    position: relative;
+    text-align: center;
+    line-height: 2px;
+}
+.footer-ditails p i{
+    padding-left: 20px;
+}
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }   
+    .header, .optional{
+        flex-direction: column;
+    }
+    .popular-collection{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    } 
+    .popular-collection{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    
 }
