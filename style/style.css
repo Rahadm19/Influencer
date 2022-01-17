@@ -161,6 +161,9 @@ hr{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
+    .logo img{
+        margin-left:20px;
+    }
     .header, .optional{
         flex-direction: column;
     }
@@ -169,6 +172,12 @@ hr{
         justify-content: center;
    
     }
+      .optional-img img{
+        width: 99%;
+        } 
+    .footer{
+        width: 100%;
+}
    
 }
 @media only screen and (min-width: 688px) and (max-width:992px) {
