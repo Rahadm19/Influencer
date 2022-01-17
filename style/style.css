@@ -157,15 +157,6 @@ hr{
     .naveheading h2{
      padding: 50px 0 0 30px;
 }
-    .head-img img{
-      width: 99%;
-      }
-    .optional-img img{
-      width: 99%;
-      }
-    .logo img{
-   margin-left:20px;
-}
     .logo{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -178,9 +169,7 @@ hr{
         justify-content: center;
    
     }
-   .footer{
-     width: 99%;
-    }
+   
 }
 @media only screen and (min-width: 688px) and (max-width:992px) {
     .container{
